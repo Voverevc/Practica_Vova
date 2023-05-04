@@ -1,0 +1,169 @@
+*{
+    margin: 0px auto;
+}
+@font-face {
+    font-family:'fomel-fin';
+    src: url(../founts/OpenSans-Regular.ttf);
+}
+header{
+    display: flex;
+}
+.block{
+    margin-right: 200px;
+    margin-top: 60px;
+}
+nav a{
+    text-align: center;
+    margin: 40px 40px 150px 150px;
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    font-family:'fomel-fin' ;
+}
+.sec{
+    margin-top: 150px;
+    margin-left: 300px;
+}
+.block-1{
+    width: 561px;
+    height: 98px;
+    background: #D9D9D9;
+    display: flex;
+    margin-left: 290px;
+    margin-top: 100px;
+}
+.block-1 h1{
+    margin-top: 30px;
+    font-family:'fomel-fin' ;
+    font-size: 30px;
+}
+.sec-1{
+    display: flex;
+    margin-top: 140px;
+}
+.berd{
+    width: 286px;
+    height: 397px;
+    background: #D9D9D9;
+    border-radius: 13px;
+    border: #D9D9D9;
+}
+.berd h1{
+    margin-left: 10px;
+    font-size: 24px;
+    font-family:'fomel-fin' ;
+    margin-top: 11px;
+}
+.berd p1{
+    margin-left: 10px;
+    font-size: 20px;
+    font-family: 'fomel-fin';
+    color: #252525;
+    margin-top: 11px;
+}
+.berd p{
+    margin-left: 10px;
+    font-size: 15px;
+    font-family: 'fomel-fin';
+    color: #252525;
+    margin-top: 11px;
+}
+.berd h3{
+    margin-left: 10px;
+    font-size: 20px;
+    font-family: 'fomel-fin';
+    margin-top: 11px;
+}
+.berd img{
+    margin-top: 50px;
+    margin-left: 10px  ;
+}
+.image-4{
+    margin-top: 200px;
+    margin-left: 200px;
+}
+.block a{
+    display: inline-block;
+    color: #0a0a0a; /* Цвет обычной ссылки */
+    line-height: 1;
+    text-decoration: none; /* Убираем подчеркивание */
+    cursor: pointer;
+  }
+.block a:after{
+    background-color: #159e33; /* Цвет линии при наведении на нее курсора мыши */
+    display: block;
+    content: "";
+    height: 2px; /* Высота линии */
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+}
+.block a:hover:after,
+.block a:focus:after{
+    width: 100%;
+}
+.block-6 a{
+    display: inline-block;
+    color: #0a0a0a; /* Цвет обычной ссылки */
+    line-height: 1;
+    text-decoration: none; /* Убираем подчеркивание */
+    cursor: pointer;
+  }
+  .block-6 a:after{
+    background-color: #159e33; /* Цвет линии при наведении на нее курсора мыши */
+    display: block;
+    content: "";
+    height: 2px; /* Высота линии */
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+  }
+  .block-6 a:hover:after,
+  .block-6 a:focus:after{
+    width: 100%;
+  }
+  .bt-1{
+    background:  #15a053;
+    border:  #15a053;
+    width: 100px;
+    height: 40px;
+    font-size: 22px;
+    border-radius:  9px;
+    box-sizing: border-box;
+    transition: all 500ms ease;
+    border: #15a053;
+    color: #ffffff;
+}
+.bt-1:hover{
+    background: rgba(255, 255, 255, 0);
+    color: #15a053;
+    box-shadow: inset 0 0 0 3px #15a053;
+    transition: 0.3s;
+}
+.bt-2{
+    background:  #15a053;
+    border: #15a053;
+    width: 205px;
+    height: 40px;
+    font-size: 22px;
+    border-radius: 9px;
+    box-sizing: border-box;
+    transition: all 500ms ease;
+    border: none;
+    color: #ffffff;
+}
+.bt-2:hover{
+    background: rgba(0, 0, 0, 0);
+    color: #15a053;
+    box-shadow: inset 0 0 0 3px   ;
+    transition: 0.3s;
+}
+.sec img{
+    transition: transform .2s; /* Animation */
+  }
+  
+.sec img:hover {
+    transform: scale(1.2); /* (150% зум - Примечание: если масштаб слишком велик, он будет выходить за пределы видового экрана) */
+  }

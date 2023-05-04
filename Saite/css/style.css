@@ -1,0 +1,237 @@
+*{
+    margin: 0px auto;
+}
+@font-face {
+    font-family:'fomel-fin';
+    src: url(../founts/OpenSans-Regular.ttf);
+}
+header{
+    display: flex;
+}
+.block{
+    margin-right: 200px;
+    margin-top: 60px;
+}
+nav a{
+    text-align: center;
+    margin: 40px 40px 150px 150px;
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    font-family:'fomel-fin' ;
+}
+.bt-1{
+    background:  #15a053;
+    border:  #15a053;
+    width: 100px;
+    height: 40px;
+    font-size: 22px;
+    border-radius:  9px;
+    box-sizing: border-box;
+    transition: all 500ms ease;
+    border: #15a053;
+    color: #ffffff;
+}
+.bt-1:hover{
+    background: rgba(255, 255, 255, 0);
+    color: #15a053;
+    box-shadow: inset 0 0 0 3px #15a053;
+    transition: 0.3s;
+}
+.bt-2{
+    background:  #15a053;
+    border: #15a053;
+    width: 205px;
+    height: 40px;
+    font-size: 22px;
+    border-radius: 9px;
+    box-sizing: border-box;
+    transition: all 500ms ease;
+    border: none;
+    color: #ffffff;
+}
+.bt-2:hover{
+    background: rgba(0, 0, 0, 0);
+    color: #15a053;
+    box-shadow: inset 0 0 0 3px   ;
+    transition: 0.3s;
+}
+.sec-1{
+    display: flex;
+    margin-top: 10px;
+}
+.image-1{
+    margin-left: 750px;
+    margin-top: 110px;
+}
+.image-1 p{
+    color: rgb(79, 80, 80);
+    font-size: 24px;
+    font-family:'fomel-fin' ;
+    margin-top: 10px;
+}
+.block-2{
+    margin-left: 450px;
+    margin-top: 80px;
+    font-size: 24px;
+    font-family: 'fomel-fin';
+}
+.line{
+    margin-left: 200px;
+    margin-top: 50px;
+}
+.block-3{
+    margin-top: 140px;
+    margin-left: 190px;
+    font-size: 26px;
+    font-family: 'fomel-fin';
+}
+.block-4{
+    display: flex;
+    margin-top: 200px;
+    font-family: 'fomel-fin';
+}
+.image-2{
+    margin-top: 200px;
+    margin-left: 200px;
+}
+.name{
+    margin-top: 200px;
+    text-align: center;
+    font-family: 'fomel-fin';
+    font-size: 26px;
+}
+.image-3{
+    margin-left: 300px;
+    margin-top: 150px;
+}
+.block-5{
+    margin-top: 30px;
+}
+.block-5 a{
+    text-decoration: none;
+    color: rgb(27, 27, 27);
+    margin-left: 320px;
+    font-family: 'fomel-fin';
+}
+.image-4{
+    margin-top: 400px;
+    margin-left: 200px;
+}
+
+.block a{
+    display: inline-block;
+    color: #0a0a0a; /* Цвет обычной ссылки */
+    line-height: 1;
+    text-decoration: none; /* Убираем подчеркивание */
+    cursor: pointer;
+}
+.block a:after{
+    background-color: #159e33; /* Цвет линии при наведении на нее курсора мыши */
+    display: block;
+    content: "";
+    height: 2px; /* Высота линии */
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+}
+.block a:hover:after,
+.block a:focus:after{
+    width: 100%;
+}
+.rotate-block {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .change-img {
+    width: 1440px;
+    height: 482px;
+    position: relative;
+    perspective: 1000px;
+    border: 1px solid #d68360; 
+  }
+  .change-img:hover .front-side-img {
+    transform: rotateY(180deg);
+  }
+  .change-img:hover .back-side-img {
+    transform: rotateY(360deg);
+  }
+  /* Стороны изображения */
+  .front-side-img, .back-side-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 3s;
+    back-side-imgface-visibility: hidden;
+   }
+  .front-side-img img {
+    max-width: 100%;
+    min-width: 100%;
+    height: 500px;
+  }
+  .back-side-img img {
+    max-width: 100%;
+    min-width: 100%;
+    height: 500px;
+    transform: scaleX(-1);
+  }
+  .back-side-img {
+    transform: rotateY(180deg);
+  }
+  .image-1 img{
+    transition: transform .2s; /* Animation */
+  }
+  
+  .image-1 img:hover {
+    transform: scale(1.5); /* (150% зум - Примечание: если масштаб слишком велик, он будет выходить за пределы видового экрана) */
+  }
+  .image-1 p{
+    transition: transform .2s; /* Animation */
+  }
+  
+  .image-1 p:hover {
+    transform: scale(1.5); /* (150% зум - Примечание: если масштаб слишком велик, он будет выходить за пределы видового экрана) */
+  }
+  .anim img{
+    transition: transform .2s; /* Animation */
+  }
+  
+  .anim img:hover {
+    transform: scale(1.5); /* (150% зум - Примечание: если масштаб слишком велик, он будет выходить за пределы видового экрана) */
+  }
+  .anim p{
+    transition: transform .2s; /* Animation */
+  }
+  
+  .anim p:hover {
+    transform: scale(1.5); /* (150% зум - Примечание: если масштаб слишком велик, он будет выходить за пределы видового экрана) */
+  }
+  .block-6 a{
+    display: inline-block;
+    color: #0a0a0a; /* Цвет обычной ссылки */
+    line-height: 1;
+    text-decoration: none; /* Убираем подчеркивание */
+    cursor: pointer;
+  }
+  .block-6 a:after{
+    background-color: #159e33; /* Цвет линии при наведении на нее курсора мыши */
+    display: block;
+    content: "";
+    height: 2px; /* Высота линии */
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+  }
+  .block-6 a:hover:after,
+  .block-6 a:focus:after{
+    width: 100%;
+  }
